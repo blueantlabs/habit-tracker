@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1= title
+	form#formAddArrival(name="addarrival",method="post",action="/addarrival")
+		input#inputUserName(type="text", placeholder="time", name="arrivaltime")
+		button#arrivedNow(class="btn") now
+		button#btnSubmit(type="submit") submit
